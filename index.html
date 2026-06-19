@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Syeda Mishaa – Software Engineering Student & Aspiring Full Stack Web Developer. Portfolio showcasing web development projects and skills." />
+  <title>Syeda Mishaa | Full Stack Developer Portfolio</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+ <!-- NAVBAR  -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <!-- Logo / Brand -->
+      <a class="navbar-brand" href="#hero">
+        <span class="brand-initials">SM</span>
+        <span class="brand-name">Syeda Mishaa</span>
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-hire" href="#contact">Hire Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   <!-- HERO SECTION  -->
+  <section id="hero" class="hero-section">
+    <!-- Decorative blobs -->
+    <div class="blob blob-1" aria-hidden="true"></div>
+    <div class="blob blob-2" aria-hidden="true"></div>
+    <div class="blob blob-3" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="row align-items-center min-vh-100">
+
+        <!-- Left: Text Content -->
+        <div class="col-lg-7 hero-text-col">
+          <div class="hero-tag animate-fade-up">
+            <i class="fas fa-code"></i>&nbsp; Open to Internships &amp; Entry-Level Roles
+          </div>
+
+          <h1 class="hero-name animate-fade-up delay-1">
+            Hi, I'm <span class="name-highlight">Syeda Mishaa</span>
+          </h1>
+
+          <!-- Animated role text -->
+          <div class="hero-roles animate-fade-up delay-2">
+            <span class="role-static">I'm a&nbsp;</span>
+            <span class="role-typed" id="typedRole"></span>
+            <span class="cursor-blink">|</span>
+          </div>
+
+          <p class="hero-summary animate-fade-up delay-3">
+            Software Engineering student crafting responsive, user-centred web experiences with HTML, CSS, JavaScript, PHP &amp; MySQL — and a growing passion for AI-powered applications.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero-ctas animate-fade-up delay-4">
+            <a href="resume.pdf" download class="btn btn-primary-custom">
+              <i class="fas fa-download me-2"></i>Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline-custom">
+              <i class="fas fa-envelope me-2"></i>Get In Touch
+            </a>
+          </div>
+
+          <!-- Quick Stats -->
+          <div class="hero-stats animate-fade-up delay-5">
+            <div class="stat-item">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">7+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Curiosity</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Avatar / Visual -->
+        <div class="col-lg-5 hero-visual-col text-center animate-fade-left delay-2">
+          <div class="avatar-wrapper">
+            <div class="avatar-ring-outer"></div>
+            <div class="avatar-ring-inner"></div>
+            <div class="avatar-core">
+              <span class="avatar-initials">SM</span>
+            </div>
+            <!-- Floating badges -->
+            <div class="float-badge badge-html">HTML5</div>
+            <div class="float-badge badge-css">CSS3</div>
+            <div class="float-badge badge-js">JS</div>
+            <div class="float-badge badge-php">PHP</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+      <a href="#about" aria-label="Scroll to About section">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
+
+   <!-- ABOUT SECTION  -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">Get to Know Me</span>
+        <h2 class="section-title">About <span class="accent-text">Me</span></h2>
+      </div>
+
+      <div class="row align-items-center g-5 mt-2">
+        <!-- Left: Illustration card -->
+        <div class="col-lg-5">
+          <div class="about-card">
+            <div class="about-card-inner">
+              <div class="about-icon-grid">
+                <div class="icon-cell"><i class="fab fa-html5"></i></div>
+                <div class="icon-cell"><i class="fab fa-css3-alt"></i></div>
+                <div class="icon-cell"><i class="fab fa-js-square"></i></div>
+                <div class="icon-cell"><i class="fab fa-php"></i></div>
+                <div class="icon-cell"><i class="fas fa-database"></i></div>
+                <div class="icon-cell"><i class="fab fa-github"></i></div>
+                <div class="icon-cell"><i class="fas fa-robot"></i></div>
+                <div class="icon-cell"><i class="fas fa-palette"></i></div>
+                <div class="icon-cell"><i class="fas fa-code-branch"></i></div>
+              </div>
+              <div class="about-card-quote">
+                <i class="fas fa-quote-left"></i>
+                <p>Learning by building — one project at a time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Bio text -->
+        <div class="col-lg-7">
+          <div class="about-text">
+            <p class="about-lead">
+              I'm a <strong>Software Engineering student</strong> based in Karachi, Pakistan, with a genuine passion for turning ideas into clean, functional web experiences.
+            </p>
+            <p>
+              My technical toolkit spans <strong>HTML, CSS, JavaScript, PHP, MySQL, Git,</strong> and <strong>GitHub</strong>. I enjoy crafting responsive, accessible interfaces while keeping a sharp eye on UI/UX details — because great code and great design go hand in hand.
+            </p>
+            <p>
+              Beyond front-end work, I'm actively expanding into back-end development, database management, and exploring how <strong>Artificial Intelligence</strong> can be woven into modern web applications. I believe the most interesting problems sit exactly at the intersection of technology and human experience.
+            </p>
+            <p>
+              I'm currently seeking <strong>internships and entry-level opportunities</strong> where I can contribute meaningfully, learn from seasoned developers, and continue growing toward becoming a capable, well-rounded Full Stack Developer.
+            </p>
+
+            <!-- Personal traits -->
+            <div class="trait-pills">
+              <span class="trait-pill"><i class="fas fa-lightbulb me-1"></i>Problem Solver</span>
+              <span class="trait-pill"><i class="fas fa-paint-brush me-1"></i>UI/UX Enthusiast</span>
+              <span class="trait-pill"><i class="fas fa-brain me-1"></i>Lifelong Learner</span>
+              <span class="trait-pill"><i class="fas fa-users me-1"></i>Collaborator</span>
+              <span class="trait-pill"><i class="fas fa-robot me-1"></i>AI Curious</span>
+            </div>
+
+            <a href="#contact" class="btn btn-primary-custom mt-4">
+              Let's Connect <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- SKILLS SECTION -->
+  <section id="skills" class="section-padding bg-soft">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">What I Work With</span>
+        <h2 class="section-title">Technical <span class="accent-text">Skills</span></h2>
+        <p class="section-subtitle">A growing arsenal of tools and technologies I use to build things people love.</p>
+      </div>
+
+      <!-- Core Skills with Progress -->
+      <div class="row g-4 mt-2">
+
+        <!-- HTML5 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon skill-html"><i class="fab fa-html5"></i></div>
+              <div>
+                <h4 class="skill-name">HTML5</h4>
+                <span class="skill-category">Markup</span>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="90" style="--bar-color: #e44d26;"></div>
+            </div>
+            <p class="skill-desc">Semantic structure, accessibility, SEO-friendly markup.</p>
+          </div>
+        </div>
+
+        <!-- CSS3 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon skill-css"><i class="fab fa-css3-alt"></i></div>
+              <div>
+                <h4 class="skill-name">CSS3</h4>
+                <span class="skill-category">Styling</span>
+              </div>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="88" style="--bar-color: #2965f1;"></div>
+            </div>
+            <p class="skill-desc">Flexbox, Grid, animations, responsive design, custom variables.</p>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="col-md-6 col-xl-4">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon skill-js"><i class="fab fa-js-square"></i></div>
+              <div>
+                <h4 class="skill-name">JavaScript</h4>
+                <span class="skill-category">Scripting</span>
+              </div>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="75" style="--bar-color: #f7df1e; filter: brightness(0.8);"></div>
+            </div>
+            <p class="skill-desc">DOM manipulation, ES6+, event handling, fetch API.</p>
+          </div>
+        </div>
+
+        <!-- PHP -->
+        <div class="col-md-6 col-xl-4">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon skill-php"><i class="fab fa-php"></i></div>
+              <div>
+                <h4 class="skill-name">PHP</h4>
+                <span class="skill-category">Back-End</span>
+              </div>
+              <span class="skill-percent">65%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="65" style="--bar-color: #8892bf;"></div>
+            </div>
+            <p class="skill-desc">Server-side scripting, form handling, dynamic pages.</p>
+          </div>
+        </div>
+
+        <!-- MySQL -->
+        <div class="col-md-6 col-xl-4">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon skill-mysql"><i class="fas fa-database"></i></div>
+              <div>
+                <h4 class="skill-name">MySQL</h4>
+                <span class="skill-category">Database</span>
+              </div>
+              <span class="skill-percent">68%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="68" style="--bar-color: #00758f;"></div>
+            </div>
+            <p class="skill-desc">Relational databases, CRUD operations, queries, joins.</p>
+          </div>
+        </div>
+
+        <!-- Git & GitHub -->
+        <div class="col-md-6 col-xl-4">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon skill-git"><i class="fab fa-github"></i></div>
+              <div>
+                <h4 class="skill-name">Git & GitHub</h4>
+                <span class="skill-category">Version Control</span>
+              </div>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="80" style="--bar-color: #f05032;"></div>
+            </div>
+            <p class="skill-desc">Branching, commits, pull requests, collaborative workflows.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Additional tech tags -->
+      <div class="tech-tags-wrapper text-center mt-5">
+        <h5 class="tech-tags-heading">Also familiar with</h5>
+        <div class="tech-tags">
+          <span class="tech-tag"><i class="fab fa-bootstrap me-1"></i>Bootstrap</span>
+          <span class="tech-tag"><i class="fas fa-paint-brush me-1"></i>UI/UX Design</span>
+          <span class="tech-tag"><i class="fas fa-mobile-alt me-1"></i>Responsive Design</span>
+          <span class="tech-tag"><i class="fas fa-robot me-1"></i>AI Integration</span>
+          <span class="tech-tag"><i class="fas fa-code me-1"></i>Problem Solving</span>
+          <span class="tech-tag"><i class="fas fa-universal-access me-1"></i>Accessibility</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- EDUCATION SECTION -->
+  <section id="education" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">Academic Journey</span>
+        <h2 class="section-title">My <span class="accent-text">Education</span></h2>
+      </div>
+
+      <div class="edu-timeline mt-5">
+
+        <!-- Timeline Item 1: University (current) -->
+        <div class="edu-item animate-on-scroll">
+          <div class="edu-dot">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="edu-card">
+            <div class="edu-card-header">
+              <div class="edu-icon">
+                <i class="fas fa-university"></i>
+              </div>
+              <div>
+                <span class="edu-status edu-current">Currently Enrolled</span>
+                <h3 class="edu-degree">Software Engineering Student</h3>
+                <p class="edu-inst"><i class="fas fa-map-marker-alt me-1"></i> Aptech — Karachi, Pakistan</p>
+              </div>
+            </div>
+            <div class="edu-body">
+              <p>Pursuing a comprehensive Software Engineering degree with a focus on web technologies, database systems, software architecture, and Artificial Intelligence integration. Actively applying classroom learning through hands-on personal projects.</p>
+              <div class="edu-highlights">
+                <span class="edu-tag">Web Development</span>
+                <span class="edu-tag">Database Management</span>
+                <span class="edu-tag">Software Engineering</span>
+                <!-- <span class="edu-tag">AI & ML Fundamentals</span> -->
+              </div>
+            </div>
+            <div class="edu-card-footer">
+              <span><i class="fas fa-calendar-alt me-1"></i>2026 – Present</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2: Intermediate -->
+        <div class="edu-item animate-on-scroll">
+          <div class="edu-dot">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="edu-card">
+            <div class="edu-card-header">
+              <div class="edu-icon">
+                <i class="fas fa-school"></i>
+              </div>
+              <div>
+                <span class="edu-status edu-completed">Completed</span>
+                <h3 class="edu-degree">Intermediate (Pre-Engineering)</h3>
+                <p class="edu-inst"><i class="fas fa-map-marker-alt me-1"></i> Karachi, Pakistan</p>
+              </div>
+            </div>
+            <div class="edu-body">
+              <p>Completed intermediate education with a strong academic foundation in mathematics and sciences, developing the analytical mindset that now drives my approach to software engineering and problem-solving.</p>
+              <div class="edu-highlights">
+                <span class="edu-tag">Mathematics</span>
+                <span class="edu-tag">Physics</span>
+                <span class="edu-tag">Analytical Thinking</span>
+              </div>
+            </div>
+            <div class="edu-card-footer">
+              <span><i class="fas fa-calendar-alt me-1"></i>Completed 2025</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION  -->
+  <section id="projects" class="section-padding bg-soft">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">Things I've Built</span>
+        <h2 class="section-title">My <span class="accent-text">Projects</span></h2>
+        <p class="section-subtitle">Each project is a lesson learned and a problem solved.</p>
+      </div>
+
+      <div class="row g-4 mt-3 justify-content-center">
+
+        <!-- Project 1: Aesthetic Gaming Website -->
+        <div class="col-md-6 col-xl-5">
+          <div class="project-card">
+            <div class="project-card-top project-gaming">
+              <div class="project-emoji" aria-label="Gaming">🎮</div>
+              <div class="project-category-badge">Front-End</div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Aesthetic Gaming Website</h3>
+              <p class="project-desc">
+                A modern, fully responsive gaming website featuring immersive layouts, smooth animations, and a dark aesthetic designed to captivate gaming enthusiasts. Built with a focus on visual storytelling, responsive grids, and intuitive navigation.
+              </p>
+              <div class="project-highlights">
+                <div class="highlight-item"><i class="fas fa-check-circle me-2"></i>Responsive multi-section layout</div>
+                <div class="highlight-item"><i class="fas fa-check-circle me-2"></i>Custom CSS animations & hover effects</div>
+                <div class="highlight-item"><i class="fas fa-check-circle me-2"></i>Mobile-first design approach</div>
+                <div class="highlight-item"><i class="fas fa-check-circle me-2"></i>Accessible colour contrasts</div>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Bootstrap</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/syedamishaa" target="_blank" rel="noopener" class="btn-project-link">
+                <i class="fab fa-github me-2"></i>View on GitHub
+              </a>
+              <span class="project-status status-complete">
+                <i class="fas fa-circle me-1"></i>Completed
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Nobel Prize Website -->
+        <div class="col-md-6 col-xl-5">
+          <div class="project-card">
+            <div class="project-card-top project-nobel">
+              <div class="project-emoji" aria-label="Trophy">🏆</div>
+              <div class="project-category-badge">Front-End</div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Nobel Prize Website</h3>
+              <p class="project-desc">
+                An informative, beautifully structured website dedicated to Nobel Prize history and laureates. Emphasises content organisation, clean typography, and a dignified aesthetic befitting the prestige of the subject.
+              </p>
+              <div class="project-highlights">
+                <div class="highlight-item"><i class="fas fa-check-circle me-2"></i>Rich content architecture</div>
+                <div class="highlight-item"><i class="fas fa-check-circle me-2"></i>Responsive card-based layout</div>
+                <div class="highlight-item"><i class="fas fa-check-circle me-2"></i>Clean typographic hierarchy</div>
+                <div class="highlight-item"><i class="fas fa-check-circle me-2"></i>Cross-device compatibility</div>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Bootstrap</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/syedamishaa" target="_blank" rel="noopener" class="btn-project-link">
+                <i class="fab fa-github me-2"></i>View on GitHub
+              </a>
+              <span class="project-status status-complete">
+                <i class="fas fa-circle me-1"></i>Completed
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- More projects CTA -->
+      <div class="text-center mt-5">
+        <p class="text-muted mb-3">More projects coming soon — I build something new every month.</p>
+        <a href="https://github.com/syedamishaa" target="_blank" rel="noopener" class="btn btn-outline-custom">
+          <i class="fab fa-github me-2"></i>See All on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">My Journey</span>
+        <h2 class="section-title">Experience &amp; <span class="accent-text">Growth</span></h2>
+        <p class="section-subtitle">Every line of code written is experience earned.</p>
+      </div>
+
+      <div class="exp-grid mt-5">
+
+        <!-- Self-Directed Learning -->
+        <div class="exp-card animate-on-scroll">
+          <div class="exp-icon-wrap"><i class="fas fa-laptop-code"></i></div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h3 class="exp-role">Self-Directed Web Developer</h3>
+              <span class="exp-badge exp-badge-self">Independent</span>
+            </div>
+            <p class="exp-org"><i class="fas fa-home me-1"></i>Personal Projects &nbsp;·&nbsp; Karachi, Pakistan</p>
+            <p class="exp-period"><i class="fas fa-calendar me-1"></i>2026 – Present</p>
+            <ul class="exp-bullets">
+              <li>Designed and developed multiple responsive websites from concept to deployment, including the Aesthetic Gaming Website and Nobel Prize Website.</li>
+              <li>Applied a mobile-first development approach using Bootstrap, ensuring cross-device compatibility and polished UI across all screen sizes.</li>
+              <li>Maintained organised codebases with Git and GitHub, practising disciplined version control and project documentation.</li>
+              <li>Actively integrated feedback loops — researching industry trends, refactoring code, and iterating on design decisions to continuously improve output quality.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Academic Projects -->
+        <div class="exp-card animate-on-scroll">
+          <div class="exp-icon-wrap"><i class="fas fa-university"></i></div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h3 class="exp-role">Software Engineering Student</h3>
+              <span class="exp-badge exp-badge-edu">Academic</span>
+            </div>
+            <p class="exp-org"><i class="fas fa-map-marker-alt me-1"></i>Aptech &nbsp;·&nbsp; Karachi, Pakistan</p>
+            <p class="exp-period"><i class="fas fa-calendar me-1"></i>2026 – Present</p>
+            <ul class="exp-bullets">
+              <li>Studying core software engineering principles including algorithms, data structures, database management, and system design.</li>
+              <li>Exploring Artificial Intelligence concepts and their practical integration into modern web applications.</li>
+              <li>Collaborating with peers on academic projects, developing teamwork, communication, and problem-solving skills in a technical environment.</li>
+              <li>Bridging theory and practice by applying course concepts directly to personal development projects.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Open Source & Community -->
+        <div class="exp-card animate-on-scroll">
+          <div class="exp-icon-wrap"><i class="fas fa-code-branch"></i></div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h3 class="exp-role">Open Source Learner &amp; Community Member</h3>
+              <span class="exp-badge exp-badge-os">Community</span>
+            </div>
+            <p class="exp-org"><i class="fab fa-github me-1"></i>GitHub &amp; Developer Communities</p>
+            <p class="exp-period"><i class="fas fa-calendar me-1"></i>2026 – Present</p>
+            <ul class="exp-bullets">
+              <li>Actively exploring open-source repositories to learn from real-world codebases and best practices.</li>
+              <li>Engaging with developer communities on LinkedIn and GitHub to stay current with industry trends.</li>
+              <li>Committed to knowledge-sharing and collaboration as a foundation for long-term professional growth.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS SECTION  -->
+  <section id="achievements" class="section-padding bg-soft">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">Recognition & Milestones</span>
+        <h2 class="section-title">Achievements &amp; <span class="accent-text">Learning</span></h2>
+      </div>
+
+      <div class="row g-4 mt-3">
+
+        <!-- GitHub Projects -->
+        <div class="col-md-6 col-lg-4">
+          <div class="ach-card">
+            <div class="ach-icon ach-github"><i class="fab fa-github"></i></div>
+            <h4 class="ach-title">GitHub Portfolio</h4>
+            <p class="ach-desc">Maintained an active GitHub profile showcasing real projects, clean commit history, and evolving development practices — evidence of learning in public.</p>
+            <a href="https://github.com/syedamishaa" target="_blank" rel="noopener" class="ach-link">
+              View GitHub <i class="fas fa-external-link-alt ms-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Completion -->
+        <div class="col-md-6 col-lg-4">
+          <div class="ach-card">
+            <div class="ach-icon ach-projects"><i class="fas fa-trophy"></i></div>
+            <h4 class="ach-title">Production-Ready Projects</h4>
+            <p class="ach-desc">Successfully delivered two complete, responsive front-end web applications — demonstrating the ability to take a project from initial wireframe to polished, deployed product.</p>
+            <span class="ach-link">2 Projects Completed</span>
+          </div>
+        </div>
+
+        <!-- Continuous Learning -->
+        <div class="col-md-6 col-lg-4">
+          <div class="ach-card">
+            <div class="ach-icon ach-learn"><i class="fas fa-book-open"></i></div>
+            <h4 class="ach-title">Continuous Learning</h4>
+            <p class="ach-desc">Committed to daily self-improvement through online resources, documentation deep-dives, and hands-on experimentation with new tools — from Bootstrap to AI APIs.</p>
+            <span class="ach-link">Ongoing Journey</span>
+          </div>
+        </div>
+
+        <!-- UI/UX Interest -->
+        <div class="col-md-6 col-lg-4">
+          <div class="ach-card">
+            <div class="ach-icon ach-design"><i class="fas fa-palette"></i></div>
+            <h4 class="ach-title">UI/UX Design Skills</h4>
+            <p class="ach-desc">Developed a strong eye for design through practical project work — focusing on user-centred layouts, visual hierarchy, colour theory, and accessible design patterns.</p>
+            <span class="ach-link">Self-Developed</span>
+          </div>
+        </div>
+
+        <!-- Tech Stack Growth -->
+        <div class="col-md-6 col-lg-4">
+          <div class="ach-card">
+            <div class="ach-icon ach-stack"><i class="fas fa-layer-group"></i></div>
+            <h4 class="ach-title">Full-Stack Foundation</h4>
+            <p class="ach-desc">Built foundational competency across both front-end (HTML, CSS, JS) and back-end (PHP, MySQL) technologies, laying the groundwork for full-stack development.</p>
+            <span class="ach-link">7+ Technologies</span>
+          </div>
+        </div>
+
+        <!-- LinkedIn Presence -->
+        <div class="col-md-6 col-lg-4">
+          <div class="ach-card">
+            <div class="ach-icon ach-linkedin"><i class="fab fa-linkedin"></i></div>
+            <h4 class="ach-title">Professional Network</h4>
+            <p class="ach-desc">Built an active LinkedIn presence connecting with developers, recruiters, and tech enthusiasts — fostering a professional network that supports growth and opportunity.</p>
+            <a href="https://www.linkedin.com/in/syeda-mishaa" target="_blank" rel="noopener" class="ach-link">
+              View LinkedIn <i class="fas fa-external-link-alt ms-1"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+ <!-- CONTACT SECTION -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">Let's Talk</span>
+        <h2 class="section-title">Get In <span class="accent-text">Touch</span></h2>
+        <p class="section-subtitle">Open to internships, collaborations, and conversations about technology.</p>
+      </div>
+
+      <div class="row g-5 mt-2 align-items-start">
+
+        <!-- Contact Info -->
+        <div class="col-lg-5">
+          <div class="contact-info-block">
+            <h4 class="contact-info-heading">Contact Details</h4>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-info-label">Email</span>
+                <a href="mailto:syedamishaa@email.com" class="contact-info-value">syedamishaa@email.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="contact-info-label">GitHub</span>
+                <a href="https://github.com/syedamishaa" target="_blank" rel="noopener" class="contact-info-value">github.com/syedamishaa</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fab fa-linkedin"></i></div>
+              <div>
+                <span class="contact-info-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/syeda-mishaa" target="_blank" rel="noopener" class="contact-info-value">linkedin.com/in/syeda-mishaa</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="contact-info-label">Location</span>
+                <span class="contact-info-value">Karachi, Sindh, Pakistan</span>
+              </div>
+            </div>
+
+            <!-- Availability -->
+            <div class="availability-badge">
+              <div class="avail-dot"></div>
+              <span>Available for internships &amp; entry-level roles</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-7">
+          <div class="contact-form-card">
+            <h4 class="contact-form-heading">Send a Message</h4>
+            <div id="formAlert" class="form-alert d-none"></div>
+
+            <div class="row g-3" id="contactForm">
+              <div class="col-md-6">
+                <label class="form-label-custom" for="firstName">First Name</label>
+                <input type="text" id="firstName" class="form-input-custom" placeholder="Your first name" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-custom" for="lastName">Last Name</label>
+                <input type="text" id="lastName" class="form-input-custom" placeholder="Your last name" />
+              </div>
+              <div class="col-12">
+                <label class="form-label-custom" for="emailField">Email Address</label>
+                <input type="email" id="emailField" class="form-input-custom" placeholder="your.email@example.com" />
+              </div>
+              <div class="col-12">
+                <label class="form-label-custom" for="subjectField">Subject</label>
+                <input type="text" id="subjectField" class="form-input-custom" placeholder="Internship Opportunity / Project Collaboration / etc." />
+              </div>
+              <div class="col-12">
+                <label class="form-label-custom" for="messageField">Message</label>
+                <textarea id="messageField" class="form-input-custom form-textarea-custom" rows="5" placeholder="Tell me about the opportunity or what you'd like to discuss..."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="button" class="btn btn-primary-custom w-100" onclick="handleFormSubmit()">
+                  <i class="fas fa-paper-plane me-2"></i>Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- FOOTER  -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo">
+            <span class="brand-initials">SM</span>
+            <span class="brand-name">Syeda Mishaa</span>
+          </a>
+          <p class="footer-tagline">Aspiring Full Stack Developer &middot; Karachi, Pakistan</p>
+        </div>
+
+        <!-- Quote -->
+        <div class="footer-quote">
+          <blockquote>
+            "The expert in anything was once a beginner. Keep building, keep learning."
+          </blockquote>
+        </div>
+
+        <!-- Social Links -->
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/syeda-mishaa" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon-link">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/syedamishaa" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:syedamishaa@email.com" aria-label="Email" class="social-icon-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>© <span id="currentYear"></span> Syeda Mishaa. Crafted with Passion <i class="fas fa-heart text-pink mx-1"></i> in Karachi, Pakistan.</p>
+        <div class="footer-nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
